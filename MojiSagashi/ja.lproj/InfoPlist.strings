@@ -6,4 +6,7 @@
   
 */
 
-"CFBundleDisplayName" = "脳トレあいう";
+"CFBundleDisplayName" = "脳トレ123";
+
+
+"NSUserTrackingUsageDescription" = "「許可」ボタンを押すことによって、お客様に最適化された広告が表示されます";

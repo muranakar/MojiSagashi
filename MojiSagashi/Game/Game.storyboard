@@ -15,10 +15,25 @@
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t7y-2M-4KO" customClass="GADBannerView">
+                                <rect key="frame" x="47" y="812" width="320" height="50"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="b0N-95-OoN"/>
+                                    <constraint firstAttribute="width" constant="320" id="ts0-xD-EZa"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="t7y-2M-4KO" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="9Oj-6h-rJt"/>
+                            <constraint firstItem="t7y-2M-4KO" firstAttribute="bottom" secondItem="vDu-zF-Fre" secondAttribute="bottom" id="U3u-Pq-Wdx"/>
+                        </constraints>
                     </view>
                     <connections>
+                        <outlet property="bannerView" destination="t7y-2M-4KO" id="bRx-NS-tvD"/>
                         <segue destination="k7z-iS-ZVQ" kind="show" identifier="result" destinationCreationSelector="makeResultVCWithCoder:sender:segueIdentifier:" id="HZS-Kx-Wsr"/>
                     </connections>
                 </viewController>

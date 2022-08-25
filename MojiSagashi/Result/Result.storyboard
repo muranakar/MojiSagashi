@@ -147,22 +147,33 @@
                                     <action selector="copyText:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="R27-G6-FUX"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zJG-Zj-YTg" customClass="GADBannerView">
+                                <rect key="frame" x="47" y="812" width="320" height="50"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="CbV-tM-3jY"/>
+                                    <constraint firstAttribute="width" constant="320" id="WHZ-zr-jab"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="Gyx-GQ-IJk" secondAttribute="bottom" constant="180" id="4KO-df-G7r"/>
+                            <constraint firstItem="zJG-Zj-YTg" firstAttribute="bottom" secondItem="vDu-zF-Fre" secondAttribute="bottom" id="5jd-f2-6WE"/>
                             <constraint firstItem="Gyx-GQ-IJk" firstAttribute="top" secondItem="kyl-bG-uNm" secondAttribute="bottom" constant="20" id="8Xe-Ii-MHg"/>
                             <constraint firstItem="Gyx-GQ-IJk" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="30" id="PDF-ek-6xK"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Gyx-GQ-IJk" secondAttribute="trailing" constant="30" id="SJ9-LJ-gc7"/>
                             <constraint firstItem="XdC-Wn-wXr" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="30" id="UTn-Fm-ywP"/>
                             <constraint firstItem="kyl-bG-uNm" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="30" id="V0o-hR-ErM"/>
+                            <constraint firstItem="zJG-Zj-YTg" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="WiD-8R-pMc"/>
                             <constraint firstItem="kyl-bG-uNm" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="30" id="cqO-et-eom"/>
                             <constraint firstItem="XdC-Wn-wXr" firstAttribute="top" secondItem="Gyx-GQ-IJk" secondAttribute="bottom" constant="10" id="pvu-Kl-cft"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="backButton" destination="kyl-bG-uNm" id="m3B-6X-yHH"/>
+                        <outlet property="bannerView" destination="zJG-Zj-YTg" id="zMP-86-5gP"/>
                         <outlet property="resultArrayCountLabel" destination="eqA-xc-tP3" id="Se0-6N-2cz"/>
                         <outlet property="resultCharacterTypeLabel" destination="8oo-x7-nL8" id="0Vf-rs-gS0"/>
                         <outlet property="resultCurrentDateLabel" destination="Kb0-8w-maA" id="8y0-cS-AJc"/>

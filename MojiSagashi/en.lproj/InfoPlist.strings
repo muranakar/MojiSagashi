@@ -7,3 +7,5 @@
 */
 
 "CFBundleDisplayName" = "Brain123";
+
+"NSUserTrackingUsageDescription" = "By pressing the \"Allow\" button, your optimized ads will be displayed";

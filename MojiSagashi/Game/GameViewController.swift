@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import GoogleMobileAds
 
 class GameViewController: UIViewController {
     private var valueArray: [String]
@@ -18,8 +19,14 @@ class GameViewController: UIViewController {
     private var gameTimer: Timer?
     private var timerFloat: Float = 0.0
 
+    // MARK: - 広告関係のプロパティ
+        @IBOutlet weak private var bannerView: GADBannerView!
+    private var interstitial: GADInterstitialAd?
+
     override func viewDidLoad() {
         super.viewDidLoad()
+        configureAdBannar()
+        configureInterstitialAd()
         gameTimer = Timer.scheduledTimer(withTimeInterval: 0.01, repeats: true, block: {[weak self] _ in
             self?.timerFloat += 0.01
         })
@@ -41,8 +48,37 @@ class GameViewController: UIViewController {
     }
 
 
-    @IBAction func reloadButtons(_ sender: Any) {
-
+    // MARK: - 広告関係のメソッド
+       private func configureAdBannar() {
+           // GADBannerViewのプロパティを設定
+           bannerView.adUnitID = "\(GoogleAdID.bannerID)"
+           bannerView.rootViewController = self
+           // 広告読み込み
+           bannerView.load(GADRequest())
+       }
+    private func configureInterstitialAd() {
+        // インタースティシャル広告
+        let request = GADRequest()
+        GADInterstitialAd.load(
+            withAdUnitID: GoogleAdID.interstitialID,
+            request: request,
+            completionHandler: { [self] ad, error in
+                if let error = error {
+                    print("Failed to load interstitial ad with error: \(error.localizedDescription)")
+                    return
+                }
+                interstitial = ad
+                interstitial?.fullScreenContentDelegate = self
+            }
+        )
+    }
+    //　Google広告を1回に表示するメソッド
+    func showGoogleIntitialAdAndPerformSegue() {
+        if interstitial != nil {
+            interstitial?.present(fromRootViewController: self)
+        } else {
+            performSegue(withIdentifier: "result", sender: nil)
+        }
     }
 
     func showRandomNumbers() {
@@ -124,7 +160,7 @@ class GameViewController: UIViewController {
             if valueArray.count == 0 {
                 requiredResultScreenTransition?.timerResult = timerFloat
                 requiredResultScreenTransition?.missCount = missCount
-                performSegue(withIdentifier: "result", sender: nil)
+                showGoogleIntitialAdAndPerformSegue()
             }
         } else {
             // TapされたUIButtonが、順番通り（1.2.3....）にTapできていない場合の処理。不正解の場合。
@@ -143,5 +179,16 @@ private extension GameViewController {
 
     @IBAction
     func backToGameViewController(segue: UIStoryboardSegue) {
+    }
+}
+
+extension GameViewController: GADFullScreenContentDelegate {
+    /// Tells the delegate that the ad failed to present full screen content.
+    func ad(_ ad: GADFullScreenPresentingAd, didFailToPresentFullScreenContentWithError error: Error) {
+        performSegue(withIdentifier: "result", sender: nil)
+    }
+    /// Tells the delegate that the ad dismissed full screen content.
+    func adDidDismissFullScreenContent(_ ad: GADFullScreenPresentingAd) {
+        performSegue(withIdentifier: "result", sender: nil)
     }
 }

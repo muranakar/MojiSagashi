@@ -9,6 +9,8 @@
 // segumentedControlに関して
 // https://majintools.com/2018/10/12/segment/
 import UIKit
+import GoogleMobileAds
+import AppTrackingTransparency
 
 class ViewController: UIViewController {
     var valueArray: [String] = []
@@ -21,8 +23,13 @@ class ViewController: UIViewController {
     @IBOutlet weak private var pickerView: UIPickerView!
     @IBOutlet weak private var segumentedControl: UISegmentedControl!
     @IBOutlet weak private var startButton: UIButton!
+
+    // MARK: - 広告関係のプロパティ
+    @IBOutlet weak private var bannerView: GADBannerView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        initAppTracking()
+        configureAdBannar()
         valueArray = Character.loadNumbers()
         initPickerViewValue()
         initTextSizeValueAndConfigureViewTextSizeLabel()
@@ -71,6 +78,28 @@ class ViewController: UIViewController {
 
     @IBAction func startGame(_ sender: Any) {
         performSegue(withIdentifier: "game", sender: nil)
+    }
+
+    private func initAppTracking() {
+        if #available(iOS 14, *) {
+            switch ATTrackingManager.trackingAuthorizationStatus {
+            case .authorized,.denied,.restricted:
+                break
+            case .notDetermined:
+                AppTrackingTransparency.showRequestTrackingAuthorizationAlert()
+            @unknown default:
+                fatalError()
+            }
+        }
+    }
+
+    // MARK: - 広告関係のメソッド
+    private func configureAdBannar() {
+        // GADBannerViewのプロパティを設定
+        bannerView.adUnitID = "\(GoogleAdID.bannerID)"
+        bannerView.rootViewController = self
+        // 広告読み込み
+        bannerView.load(GADRequest())
     }
     private func initTextSizeValueAndConfigureViewTextSizeLabel() {
         if TextSizeRepository.load() == nil {
@@ -130,7 +159,7 @@ class ViewController: UIViewController {
         segumentedControl.setTitleTextAttributes([
             NSAttributedString.Key.font : UIFont(name: "HiraKakuProN-W3", size: 20.0)!,
             NSAttributedString.Key.foregroundColor: UIColor.init(named: "string")!
-            ], for: .normal)
+        ], for: .normal)
         segumentedControl.setTitle(NSLocalizedString("characterTypeNumber", comment: ""), forSegmentAt: 0)
         segumentedControl.setTitle(NSLocalizedString("characterTypeLetter", comment: ""), forSegmentAt: 1)
     }

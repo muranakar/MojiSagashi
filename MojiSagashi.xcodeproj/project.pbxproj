@@ -16,6 +16,8 @@
 		B2953FAB28B44230005E9DE3 /* RequiredResultScreenTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2953FAA28B44230005E9DE3 /* RequiredResultScreenTransition.swift */; };
 		B2953FAD28B44257005E9DE3 /* ButtonPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2953FAC28B44257005E9DE3 /* ButtonPosition.swift */; };
 		B2C6801B28B7A15B0001A5B6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B2C6801D28B7A15B0001A5B6 /* InfoPlist.strings */; };
+		B2C6802028B7A4620001A5B6 /* GoogleAdID.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C6801F28B7A4620001A5B6 /* GoogleAdID.swift */; };
+		B2C6802228B7A5540001A5B6 /* AppTrackingTransparency.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C6802128B7A5540001A5B6 /* AppTrackingTransparency.swift */; };
 		B2C9145928B18951001BFF9C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C9145828B18951001BFF9C /* AppDelegate.swift */; };
 		B2C9145B28B18951001BFF9C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C9145A28B18951001BFF9C /* SceneDelegate.swift */; };
 		B2C9145D28B18951001BFF9C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C9145C28B18951001BFF9C /* ViewController.swift */; };
@@ -57,6 +59,8 @@
 		B2953FAC28B44257005E9DE3 /* ButtonPosition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonPosition.swift; sourceTree = "<group>"; };
 		B2C6801C28B7A15B0001A5B6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B2C6801E28B7A15E0001A5B6 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B2C6801F28B7A4620001A5B6 /* GoogleAdID.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleAdID.swift; sourceTree = "<group>"; };
+		B2C6802128B7A5540001A5B6 /* AppTrackingTransparency.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppTrackingTransparency.swift; sourceTree = "<group>"; };
 		B2C9145528B18951001BFF9C /* MojiSagashi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MojiSagashi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2C9145828B18951001BFF9C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B2C9145A28B18951001BFF9C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -170,6 +174,8 @@
 		B2C9147A28B25F7C001BFF9C /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				B2C6802128B7A5540001A5B6 /* AppTrackingTransparency.swift */,
+				B2C6801F28B7A4620001A5B6 /* GoogleAdID.swift */,
 				B2C9147B28B25FD3001BFF9C /* Character.swift */,
 				B27F94D828B587DE00CDB4E6 /* DeviceType.swift */,
 				B2779E5728B2E95600AF90D2 /* TextSizeRepository.swift */,
@@ -313,11 +319,13 @@
 				B2C9147C28B25FD3001BFF9C /* Character.swift in Sources */,
 				B2779E5828B2E95600AF90D2 /* TextSizeRepository.swift in Sources */,
 				B2953FAD28B44257005E9DE3 /* ButtonPosition.swift in Sources */,
+				B2C6802028B7A4620001A5B6 /* GoogleAdID.swift in Sources */,
 				B2953FAB28B44230005E9DE3 /* RequiredResultScreenTransition.swift in Sources */,
 				B2C9145D28B18951001BFF9C /* ViewController.swift in Sources */,
 				B2C9147928B24E6F001BFF9C /* InitNavigationController.swift in Sources */,
 				B2779E5A28B2F12300AF90D2 /* PickerViewValue.swift in Sources */,
 				B2C9145928B18951001BFF9C /* AppDelegate.swift in Sources */,
+				B2C6802228B7A5540001A5B6 /* AppTrackingTransparency.swift in Sources */,
 				B2C9145B28B18951001BFF9C /* SceneDelegate.swift in Sources */,
 				B2953FA928B441B9005E9DE3 /* CharacterType.swift in Sources */,
 			);

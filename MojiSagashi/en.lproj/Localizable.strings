@@ -20,12 +20,6 @@
 "titleFontSizeLabel" = "Character Size" ;
 "titleTimerResultLabel" = "Execution Time" ;
 "titleMissCountLabel" = "Error Count" ;
-"resultCurrentDateLabel" = "" ;
-"resultCharacterTypeLabel" = "" ;
-"resultArrayCountLabel" = "" ;
-"resultFontSizeLabel" = "" ;
-"resultTimerResultLabel" = "" ;
-"resultMissCountLabel" = "" ;
 
 "backTextButton" = "Back";
 "resultCopyButtonText" = "CopyResult";

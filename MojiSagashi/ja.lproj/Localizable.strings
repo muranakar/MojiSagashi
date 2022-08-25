@@ -20,12 +20,6 @@
 "titleFontSizeLabel" = "文字サイズ" ;
 "titleTimerResultLabel" = "実施時間" ;
 "titleMissCountLabel" = "間違い回数" ;
-"resultCurrentDateLabel" = "" ;
-"resultCharacterTypeLabel" = "" ;
-"resultArrayCountLabel" = "" ;
-"resultFontSizeLabel" = "" ;
-"resultTimerResultLabel" = "" ;
-"resultMissCountLabel" = "" ;
 
 "backTextButton" = "戻る";
 "resultCopyButtonText" = "結果をコピー";

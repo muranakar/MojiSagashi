@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import GoogleMobileAds
 
 class ResultViewController: UIViewController {
     @IBOutlet weak private var backButton: UIButton!
@@ -25,9 +26,13 @@ class ResultViewController: UIViewController {
 
     @IBOutlet weak private var textCopyButton: UIButton!
 
+    // MARK: - 広告関係のプロパティ
+    @IBOutlet weak private var bannerView: GADBannerView!
+
     private var requiredResultScreenTransition: RequiredResultScreenTransition
     override func viewDidLoad() {
         super.viewDidLoad()
+        configureAdBannar()
         configureViewTitleText()
         configureViewResultText()
         configureViewBackButton()
@@ -43,6 +48,15 @@ class ResultViewController: UIViewController {
     }
     @IBAction func copyText(_ sender: Any) {
         copyText()
+    }
+
+    // MARK: - 広告関係のメソッド
+    private func configureAdBannar() {
+        // GADBannerViewのプロパティを設定
+        bannerView.adUnitID = "\(GoogleAdID.bannerID)"
+        bannerView.rootViewController = self
+        // 広告読み込み
+        bannerView.load(GADRequest())
     }
 
     private func configureViewTitleText() {
