@@ -1,0 +1,31 @@
+/* 
+  Localizable.strings
+  MojiSagashi
+
+  Created by 村中令 on 2022/08/23.
+  
+*/
+
+"languageCode" = "ja";
+
+"iPadAttention" = "iPadを横向きにして、ご利用ください！" ;
+"characterTypeNumber" = "数字" ;
+"characterTypeLetter" = "ひらがな" ;
+"startButton" = "スタート" ;
+"textSize" = "文字大きさ" ;
+
+"titleCurrentDateLabel" = "実施日" ;
+"titleCharacterTypeLabel" = "文字タイプ" ;
+"titleArrayCountLabel" = "文字数" ;
+"titleFontSizeLabel" = "文字サイズ" ;
+"titleTimerResultLabel" = "実施時間" ;
+"titleMissCountLabel" = "間違い回数" ;
+"resultCurrentDateLabel" = "" ;
+"resultCharacterTypeLabel" = "" ;
+"resultArrayCountLabel" = "" ;
+"resultFontSizeLabel" = "" ;
+"resultTimerResultLabel" = "" ;
+"resultMissCountLabel" = "" ;
+
+"backTextButton" = "戻る";
+"resultCopyButtonText" = "結果をコピー";

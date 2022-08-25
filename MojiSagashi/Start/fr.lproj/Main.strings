@@ -1,0 +1,21 @@
+
+/* Class = "UIButton"; configuration.title = "start"; ObjectID = "03r-Vg-T0O"; */
+"03r-Vg-T0O.configuration.title" = "start";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "03r-Vg-T0O"; */
+"03r-Vg-T0O.normalTitle" = "Button";
+
+/* Class = "UISegmentedControl"; 1oi-R9-1jU.segmentTitles[0] = "Numbers"; ObjectID = "1oi-R9-1jU"; */
+"1oi-R9-1jU.segmentTitles[0]" = "Numbers";
+
+/* Class = "UISegmentedControl"; 1oi-R9-1jU.segmentTitles[1] = "Letter"; ObjectID = "1oi-R9-1jU"; */
+"1oi-R9-1jU.segmentTitles[1]" = "Letter";
+
+/* Class = "UILabel"; text = "Aa"; ObjectID = "bpW-8M-0gh"; */
+"bpW-8M-0gh.text" = "Aa";
+
+/* Class = "UILabel"; text = "Aa"; ObjectID = "czf-2m-IM1"; */
+"czf-2m-IM1.text" = "Aa";
+
+/* Class = "UILabel"; text = "Aa"; ObjectID = "xFR-8Y-NRi"; */
+"xFR-8Y-NRi.text" = "Aa";

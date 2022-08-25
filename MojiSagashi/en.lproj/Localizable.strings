@@ -1,0 +1,31 @@
+/* 
+  Localizable.strings
+  MojiSagashi
+
+  Created by 村中令 on 2022/08/23.
+  
+*/
+
+"languageCode" = "en";
+
+"iPadAttention" = "For iPad, please turn it sideways" ;
+"characterTypeNumber" = "Number" ;
+"characterTypeLetter" = "Letter" ;
+"startButton" = "START" ;
+"textSize" = "TextSize" ;
+
+"titleCurrentDateLabel" = "Implementation Date" ;
+"titleCharacterTypeLabel" = "Character Type" ;
+"titleArrayCountLabel" = "Number of characters" ;
+"titleFontSizeLabel" = "Character Size" ;
+"titleTimerResultLabel" = "Execution Time" ;
+"titleMissCountLabel" = "Error Count" ;
+"resultCurrentDateLabel" = "" ;
+"resultCharacterTypeLabel" = "" ;
+"resultArrayCountLabel" = "" ;
+"resultFontSizeLabel" = "" ;
+"resultTimerResultLabel" = "" ;
+"resultMissCountLabel" = "" ;
+
+"backTextButton" = "Back";
+"resultCopyButtonText" = "CopyResult";
