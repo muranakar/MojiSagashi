@@ -53,7 +53,7 @@ class ResultViewController: UIViewController {
     // MARK: - 広告関係のメソッド
     private func configureAdBannar() {
         // GADBannerViewのプロパティを設定
-        bannerView.adUnitID = "\(GoogleAdID.bannerID)"
+        bannerView.adUnitID = "\(GoogleAdID.resultBannerID)"
         bannerView.rootViewController = self
         // 広告読み込み
         bannerView.load(GADRequest())
