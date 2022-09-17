@@ -8,5 +8,6 @@ target 'MojiSagashi' do
   # Pods for MojiSagashi
 
 pod 'Google-Mobile-Ads-SDK'
+pod 'FirebaseAnalytics'
 
 end

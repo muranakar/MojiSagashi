@@ -30,6 +30,7 @@
 		B2C9147728B24A5E001BFF9C /* Result.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2C9147628B24A5E001BFF9C /* Result.storyboard */; };
 		B2C9147928B24E6F001BFF9C /* InitNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C9147828B24E6F001BFF9C /* InitNavigationController.swift */; };
 		B2C9147C28B25FD3001BFF9C /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C9147B28B25FD3001BFF9C /* Character.swift */; };
+		B2D3CE3E28D3C94B00651DFD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B2D3CE3D28D3C94B00651DFD /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -75,6 +76,7 @@
 		B2C9147628B24A5E001BFF9C /* Result.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Result.storyboard; sourceTree = "<group>"; };
 		B2C9147828B24E6F001BFF9C /* InitNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitNavigationController.swift; sourceTree = "<group>"; };
 		B2C9147B28B25FD3001BFF9C /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
+		B2D3CE3D28D3C94B00651DFD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D43462DCD988E7CBE8CE891E /* Pods-MojiSagashi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MojiSagashi.release.xcconfig"; path = "Target Support Files/Pods-MojiSagashi/Pods-MojiSagashi.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -137,6 +139,7 @@
 				B2C9146128B18952001BFF9C /* Assets.xcassets */,
 				B2C9146328B18952001BFF9C /* LaunchScreen.storyboard */,
 				B2C9146628B18952001BFF9C /* Info.plist */,
+				B2D3CE3D28D3C94B00651DFD /* GoogleService-Info.plist */,
 				B2953FA628B440B0005E9DE3 /* Localizable.strings */,
 				B2C6801D28B7A15B0001A5B6 /* InfoPlist.strings */,
 			);
@@ -255,6 +258,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B2C9147728B24A5E001BFF9C /* Result.storyboard in Resources */,
+				B2D3CE3E28D3C94B00651DFD /* GoogleService-Info.plist in Resources */,
 				B2C6801B28B7A15B0001A5B6 /* InfoPlist.strings in Resources */,
 				B2953FA428B440B0005E9DE3 /* Localizable.strings in Resources */,
 				B2C9147128B24A35001BFF9C /* Game.storyboard in Resources */,
@@ -522,7 +526,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1.2;
+				MARKETING_VERSION = 1.1.4;
 				PRODUCT_BUNDLE_IDENTIFIER = com.muranaka.MojiSagashi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -552,7 +556,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1.2;
+				MARKETING_VERSION = 1.1.4;
 				PRODUCT_BUNDLE_IDENTIFIER = com.muranaka.MojiSagashi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
