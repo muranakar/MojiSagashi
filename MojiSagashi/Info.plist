@@ -4,6 +4,13 @@
 <dict>
 	<key>GADApplicationIdentifier</key>
 	<string>ca-app-pub-3713368437594912~1888873845</string>
+    <key>SKAdNetworkItems</key>
+      <array>
+        <dict>
+          <key>SKAdNetworkIdentifier</key>
+          <string>cstr6suwn9.skadnetwork</string>
+        </dict>
+      </array>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>
